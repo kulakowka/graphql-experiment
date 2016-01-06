@@ -3,15 +3,14 @@ import {
   GraphQLObjectType,
   GraphQLString
 } from 'graphql'
-
 import graphqlHTTP from 'express-graphql'
 import express from 'express'
 
 // Import our data set from above
-var data = require('./data.json')
+const data = require('./data.json')
 
 // Define our user type, with two string fields; `id` and `name`
-var userType = new GraphQLObjectType({
+const userType = new GraphQLObjectType({
   name: 'User',
   fields: {
     id: { type: GraphQLString },
@@ -21,7 +20,7 @@ var userType = new GraphQLObjectType({
 
 // Define our schema, with one top level field, named `user`, that
 // takes an `id` argument and returns the User with that ID.
-var schema = new GraphQLSchema({
+const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
     fields: {
