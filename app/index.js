@@ -1,4 +1,4 @@
-var graphql = require('graphql');
+import graphql from 'graphql'
 var graphqlHTTP = require('express-graphql');
 var express = require('express');
 
