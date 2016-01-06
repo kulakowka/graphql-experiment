@@ -1,28 +1,40 @@
-# babel-starter-kit
+# grapql-experiment
 
-My node.js starter-kit with [babel.js](http://babeljs.io)
-
-#### Setup
+#### Install
 
 Run this command in console to install project.
+```
+git clone git@github.com:kulakowka/graphql-experiment.git && cd graphql-experiment && npm install
+```
+
+#### Testing
+
+1. Start GraphQL server.
 
 ```
-git clone git@github.com:kulakowka/babel-starter-kit.git && cd babel-starter-kit && npm install
+npm start
 ```
 
-Start script `npm start` use [require hook](https://babeljs.io/docs/usage/require/):
+2. Open link in your browser: 
+    
+[http://localhost:3000/graphql?query={user(id:%221%22){name}}](http://localhost:3000/graphql?query={user(id:%221%22){name}})
 
-#### package.json
+GraphQL Query:
 ```
-"scripts": {
-    "start": "node -r babel-register index.js"
+{
+  user(id: "1") {
+    name
+  }
 }
 ```
 
-#### .babelrc
-
-```js
+Response json:
+```json
 {
-  "presets": ["es2015"]
+  "data": {
+    "user": {
+      "name": "Dan"
+    }
+  }
 }
 ```
