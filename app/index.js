@@ -29,7 +29,7 @@ const schema = new GraphQLSchema({
         args: {
           id: { type: GraphQLString }
         },
-        resolve: function (_, args) {
+        resolve (_, args) {
           return data[args.id]
         }
       }
