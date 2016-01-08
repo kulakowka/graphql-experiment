@@ -127,3 +127,10 @@ Query result:
   }
 }
 ```
+
+## Resources
+
+- [Introduction to GraphQL](https://learngraphql.com/) - a good walk through of GraphQL cocepts.
+- [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql) - awesome list of GraphQL & Relay
+
+
