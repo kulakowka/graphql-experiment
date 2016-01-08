@@ -21,6 +21,8 @@ Open link in your browser [http://localhost:3000](http://localhost:3000)
 
 ### Get user by id
 
+![2016-01-08 23 02 17](https://cloud.githubusercontent.com/assets/557190/12208171/289387f4-b65c-11e5-9320-8d0647dfa1aa.png)
+
 GraphQL query:
 
 ```graphql
@@ -56,6 +58,8 @@ Query result:
 ```
 
 ### Get users list
+
+![2016-01-08 23 05 06](https://cloud.githubusercontent.com/assets/557190/12208183/46c50130-b65c-11e5-87b5-1ed4331e00a7.png)
 
 GraphQL Query:
 
@@ -98,6 +102,8 @@ Query result:
 ## Mutations
 
 ### Create user
+
+![2016-01-08 23 05 51](https://cloud.githubusercontent.com/assets/557190/12208191/61f1e6b2-b65c-11e5-9ada-d38e4c4a0223.png)
 
 GraphQL query:
 
